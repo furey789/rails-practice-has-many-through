@@ -4,26 +4,29 @@
 
 <h2>Organizations</h2>
 
-<table>
+<div class="well">
 
-  <thead>
-    <tr>
-      <th>
-        Name
-      </th>
-    </tr>
-  </thead>
+  <table>
 
-  <tbody>
-    <div class="well">
-      <% @person.organizations.each do |organization|%>
-        <tr>
-          <td>
-            <%= organization.name %>
-          </td>
-        </tr>
-      <% end %>
-    </div>
-  </tbody>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+      </tr>
+    </thead>
 
-</table>
+    <tbody>
+
+        <% @person.organizations.each do |organization|%>
+          <tr>
+            <td>
+              <%= organization.name %>
+            </td>
+          </tr>
+        <% end %>
+    </tbody>
+
+  </table>
+
+</div>
